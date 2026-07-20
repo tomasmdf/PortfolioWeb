@@ -1,3 +1,6 @@
+import CategoryBadge from "./CategoryBadge";
+import SkillPill from "./SkillPill";
+
 export default function ProjectItem({ project }: { project: any }) {
   return (
     <div className="w-full h-max p-4 bg-background rounded-xl flex flex-row items-center gap-x-4 gap-y-3 flex-wrap duration-150 hover:bg-surface group ">
@@ -8,16 +11,20 @@ export default function ProjectItem({ project }: { project: any }) {
             <img src={project.iconUrl} alt={project.title} className="w-10 h-10 object-cover rounded-full bg-center" />
         </i>
         <div>
-            <h3 className="text-subtitle font-semibold mb-1">{project.title}</h3>
-            <p className="text-text-secondary text-body mb-4 text-wrap">{project.description}</p>
-            <div className="flex flex-wrap gap-x-3">
-            {project.tags.map((tag: string, index: number) => (
-                <span key={index} className="w-max text-text-muted text-extra-small uppercase tracking-wide font-semibold">
-                    {tag}
-                </span>
-                ))}
+            {/*
+            <div className="flex flex-wrap gap-3 mb-3">
+            {project.tags.map((tag: string, index: number) => ( 
+                <SkillPill key={index} skill={tag} />
+                ))
+            }
             </div>
+            */}
+            <CategoryBadge category={project.category} />
+            <h3 className="text-3xl font-heading mb-3">{project.title}</h3>
+            <p className="text-text-secondary text-body mb-4 text-wrap">{project.description}</p>
         </div>
     </div>
   )
 }
+
+ {/* <span key={index} className="w-max bg-surface text-text-secondary border border-text-muted px-3 py-1 rounded-full text-skill">{tag}</span> */}

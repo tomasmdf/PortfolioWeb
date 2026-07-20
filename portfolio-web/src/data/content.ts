@@ -3,7 +3,7 @@ export const portfolioData = {
     // Título gigante en tipografía Serif
     title: "Hi, I'm Tomas De Faveri, i'm based in Argentina.", 
     // Párrafo de introducción en tipografía Sans-serif
-    description: "Desarrollador y estudiante en la UNCuyo. Apasionado por construir aplicaciones escalables, arquitecturas de datos complejas y explorar la lógica formal aplicada a la ingeniería de sistemas.",
+    description: "Developer and student at UNCuyo. Passionate about building scalable applications, complex data architectures, and exploring formal logic applied to systems engineering.",
     resumeUrl: "/cv-tomas.pdf", // Ruta a tu PDF en la carpeta public
   },
 
@@ -15,17 +15,17 @@ export const portfolioData = {
       title: "Weather App",
       category: "Web & Mobile Development",
       tags: ["React", "JavaScript", "ThreeJs", "React Three Fiber"],
-      description: "Diseño y desarrollo de una aplicación móvil para un taller mecánico. Incluye módulos completos para el registro de nuevos vehículos, catálogos de servicios y seguimiento del detalle de las órdenes de trabajo.",
+      description: "Design and development of a mobile application for a mechanical workshop. Includes complete modules for registering new vehicles, service catalogs, and tracking the details of work orders.",
       link: "https://github.com/tu-usuario/repo-taller" // Opcional
     },
     {
       id: "02",
-      iconUrl: "https://fluentdeck.vercel.app/emoji/webp/3D/microscope_3d.webp",
+      iconUrl: "https://fluentdeck.vercel.app/emoji/webp/3D/magic_wand_3d.webp",
       imgUrl: "/project-1.png", 
       title: "Trie Vizualizer",
       category: "Algorithms & Data Structures",
       tags: ["Data Structures", "JavaScript", "React", "React Flow"],
-      description: "Desarrollo de un visualizador interactivo para estructuras de datos Trie, permitiendo la representación gráfica y la exploración de sus propiedades.",
+      description: "Interactive visualization of a Trie data structure, allowing users to insert, search, and delete words while observing the underlying structure and operations in real-time.",
       link: "" 
     },
   ],
@@ -51,6 +51,22 @@ export const portfolioData = {
       year: "2023 - Now"
     }
   ],
+
+  contact: {
+    title: "Get in Touch",
+    description: "Feel free to reach out for collaborations or just a friendly chat. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    email: "defaveritomas@gmail.com",
+    socials: [
+      {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/tomasmdf",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/tomasmdf",
+      }
+    ]
+  },
 
   footer: {
     email: "tu-correo@gmail.com",

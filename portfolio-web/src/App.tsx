@@ -5,19 +5,23 @@ import EducationSection from './components/sections/EducationSection'
 import Hero from './components/sections/Hero'
 import ProjectsSection from './components/sections/ProjectsSection'
 import SkillsGrid from './components/sections/SkillsGrid'
+import ContactSection from './components/sections/ContactSection'
 
 function App() {
 
   return (
-      <div className="bg-color-background text-text-primary min-h-screen w-3/6">
+      <div className="bg-color-background text-text-primary min-h-screen w-full md:w-3/6 lg:w-3/6">
         <Header/>
         <Hero/>
         <ProjectsSection/>
         <SkillsGrid/>
         <EducationSection/>
-        <SectionWrapper>
-          <img src="https://framerusercontent.com/images/fmq54vhn9uNuvr2HWCxIuwBj6WA.webp?width=4200&height=2055" alt="" className="w-full h-full object-cover rounded-xl" />
-        </SectionWrapper>
+        <ContactSection/>
+        {
+          /*<SectionWrapper>
+            <img src="https://framerusercontent.com/images/fmq54vhn9uNuvr2HWCxIuwBj6WA.webp?width=4200&height=2055" alt="" className="w-full h-full object-cover rounded-xl" />
+          </SectionWrapper> */
+        }
 
         <div 
           className="
